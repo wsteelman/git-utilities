@@ -44,18 +44,6 @@ current_branch = git_python.cur_branch()
 for i in range(0, branch_cnt):
    print 'rebasing ' + branches[i] + ' onto ' + upstream
    git_python.rebase(upstream, branches[i], flags)
-#   args = ['git', 'rebase'] #, upstream, branches[i]]
-#   args = args + flags
-#   args.append(upstream)
-#   args.append(branches[i])
-#   proc = subprocess.Popen(args, stderr=subprocess.STDOUT, stdout=subprocess.PIPE)
-#   rc = proc.wait()
-#   if rc != 0:
-#      print proc.stdout
-#      print "git-multi-rebase: call 'git rebase --continue|--abort' to finish rebasing branch " + branches[i]
-#      print "git-multi-rebase: exit shell to continue the multi-rebase process"
-#      subprocess.call(['$SHELL'], shell=True)
-
 
 # checkout previous branch
 if current_branch != branches[branch_cnt-1]:

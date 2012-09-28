@@ -9,3 +9,9 @@ A script to rebase multiple branches onto a single base.  This script will itera
 usage: git-multi-rebase [options] newbase branch0 [branch1 ... branchN]
 
 All options are passed directly through to each git rebase call
+
+[git-completion.bash]
+An updated version the standard git-completion.bash script that supports git-multi-rebase
+
+[git_python.py]
+A python module to wrap some standard git functions
